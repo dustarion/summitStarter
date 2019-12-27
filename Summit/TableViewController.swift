@@ -16,8 +16,16 @@ class TableViewController: UITableViewController {
     }
     
     //MARK: Table View Delegate
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        // Code...
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        /// Version 1
+        return 3
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        /// Version 1
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        cell.detailTextLabel?.text = "Hello"
+        return cell
     }
 
 }
