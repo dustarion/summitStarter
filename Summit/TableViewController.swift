@@ -14,7 +14,27 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     
-    // Darken Stackview
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        darken(0.3)
+        round(8.0)
+    }
+    
+    // Darken ImageView
+    func darken(_ amount: Float) {
+        let coverLayer = CALayer()
+        coverLayer.frame = backgroundImageView.bounds;
+        coverLayer.backgroundColor = UIColor.black.cgColor
+        coverLayer.opacity = amount
+        backgroundImageView.layer.addSublayer(coverLayer)
+    }
+    
+    // Round the edges of ImageView
+    func round(_ radius: CGFloat) {
+        backgroundImageView.layer.cornerRadius = radius
+        backgroundImageView.clipsToBounds = true
+    }
+    
 }
 
 class TableViewController: UITableViewController {
