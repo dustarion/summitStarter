@@ -14,5 +14,10 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         seedMountains() // Populate the [Mountains] array
     }
+    
+    //MARK: Table View Delegate
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // Code...
+    }
 
 }
