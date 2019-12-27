@@ -23,8 +23,8 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         /// Version 1
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.detailTextLabel?.text = "Hello"
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        cell.detailTextLabel?.text = "Hello!"
         return cell
     }
 
