@@ -14,6 +14,8 @@
 		49F9DF8E23B606300060D265 /* Summit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49F9DF8C23B606300060D265 /* Summit.xcdatamodeld */; };
 		49F9DF9023B606330060D265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F9DF8F23B606330060D265 /* Assets.xcassets */; };
 		49F9DF9323B606330060D265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F9DF9123B606330060D265 /* LaunchScreen.storyboard */; };
+		49F9DF9B23B60BA60060D265 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F9DF9A23B60BA60060D265 /* TableViewController.swift */; };
+		49F9DF9D23B60BE40060D265 /* Summit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F9DF9C23B60BE40060D265 /* Summit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		49F9DF8F23B606330060D265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F9DF9223B606330060D265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49F9DF9423B606330060D265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F9DF9A23B60BA60060D265 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		49F9DF9C23B60BE40060D265 /* Summit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,9 @@
 			children = (
 				49F9DF8323B606300060D265 /* AppDelegate.swift */,
 				49F9DF8523B606300060D265 /* SceneDelegate.swift */,
+				49F9DF9A23B60BA60060D265 /* TableViewController.swift */,
 				49F9DF8723B606300060D265 /* ViewController.swift */,
+				49F9DF9C23B60BE40060D265 /* Summit.swift */,
 				49F9DF8923B606300060D265 /* Main.storyboard */,
 				49F9DF8F23B606330060D265 /* Assets.xcassets */,
 				49F9DF9123B606330060D265 /* LaunchScreen.storyboard */,
@@ -144,6 +150,8 @@
 				49F9DF8823B606300060D265 /* ViewController.swift in Sources */,
 				49F9DF8423B606300060D265 /* AppDelegate.swift in Sources */,
 				49F9DF8E23B606300060D265 /* Summit.xcdatamodeld in Sources */,
+				49F9DF9B23B60BA60060D265 /* TableViewController.swift in Sources */,
+				49F9DF9D23B60BE40060D265 /* Summit.swift in Sources */,
 				49F9DF8623B606300060D265 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
