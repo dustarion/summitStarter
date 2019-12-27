@@ -32,6 +32,7 @@ func seedMountains() {
     Mountains.append(Mountain.init(name: "Cho Oyu",           height: 8188, image: #imageLiteral(resourceName: "Cho Oyu")))
 }
 
+
 //MARK: Crop a given image into a square.
 func cropImageToSquare(_ image: UIImage) -> UIImage? {
     var imageHeight = image.size.height

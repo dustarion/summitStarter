@@ -35,6 +35,7 @@ class TableViewController: UITableViewController {
         let currentMountain = Mountains[indexPath.row]
         cell.textLabel?.text = currentMountain.name
         cell.detailTextLabel?.text = String(currentMountain.height) + " m"
+        //cell.imageView?.image = currentMountain.image
         cell.imageView?.image = cropImageToSquare(currentMountain.image)
         
         /// Version 3
