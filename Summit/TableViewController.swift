@@ -8,85 +8,11 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
-    @IBOutlet weak var backgroundImageView: UIImageView!
-    @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        darken(0.3)
-        round(8.0)
-    }
-    
-    // Darken ImageView
-    func darken(_ amount: Float) {
-        let coverLayer = CALayer()
-        coverLayer.frame = backgroundImageView.bounds;
-        coverLayer.backgroundColor = UIColor.black.cgColor
-        coverLayer.opacity = amount
-        backgroundImageView.layer.addSublayer(coverLayer)
-    }
-    
-    // Round the edges of ImageView
-    func round(_ radius: CGFloat) {
-        backgroundImageView.layer.cornerRadius = radius
-        backgroundImageView.clipsToBounds = true
-    }
-    
-}
-
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         seedMountains() // Populate the [Mountains] array
-    }
-    
-    //MARK: Table View Delegate
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        /// Version 1
-        //return 3
-        
-        /// Version 2
-        return Mountains.count
-    }
-    
-    // Add this delegate to change cell height!
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /// Version 1
-        //let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        //cell.detailTextLabel?.text = "Hello!"
-        //return cell
-        
-        /// Version 2
-        //let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        //let currentMountain = Mountains[indexPath.row]
-        //cell.textLabel?.text = currentMountain.name
-        //cell.detailTextLabel?.text = String(currentMountain.height) + " m"
-        //cell.imageView?.image = currentMountain.image
-        //cell.imageView?.image = cropImageToSquare(currentMountain.image)
-        
-        /// Version 3
-        /// Improving the image in the cell
-        //cell.imageView?.layer.borderWidth = 5
-        //cell.imageView?.layer.borderColor = UIColor.white.cgColor
-        //cell.imageView?.clipsToBounds = true
-        
-        /// Version 4
-        let cell = tableView.dequeueReusableCell(withIdentifier: "nicerCell", for: indexPath) as! CustomTableViewCell
-        let currentMountain = Mountains[indexPath.row]
-        
-        cell.backgroundImageView.image = currentMountain.image
-        cell.titleLabel.text = currentMountain.name
-        cell.subtitleLabel.text = String(currentMountain.height) + " m"
-        
-        return cell
     }
 
 }

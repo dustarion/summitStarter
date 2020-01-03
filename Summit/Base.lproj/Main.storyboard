@@ -16,75 +16,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="XeY-ki-nbU" detailTextLabel="Edb-Pf-ihC" style="IBUITableViewCellStyleSubtitle" id="T0O-jw-h9K">
-                                <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="XeY-ki-nbU" style="IBUITableViewCellStyleDefault" id="T0O-jw-h9K">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T0O-jw-h9K" id="Ns8-a3-q8M">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XeY-ki-nbU">
-                                            <rect key="frame" x="16.000000000000004" y="9.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Edb-Pf-ihC">
-                                            <rect key="frame" x="15.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nicerCell" rowHeight="200" id="3UW-qc-kK7" customClass="CustomTableViewCell" customModule="Summit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="83" width="375" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3UW-qc-kK7" id="CeH-lV-sUv">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fuji" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-E8-eXb">
-                                            <rect key="frame" x="16" y="11" width="343" height="178"/>
-                                        </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PiM-Rq-CI0">
-                                            <rect key="frame" x="114.33333333333333" y="64" width="146.33333333333337" height="72"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mount Fuji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M2-79-fjl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="146.33333333333334" height="36"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3776 m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-Mn-cM7">
-                                                    <rect key="frame" x="47.000000000000014" y="36" width="52.333333333333329" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </stackView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Pq3-E8-eXb" firstAttribute="trailing" secondItem="CeH-lV-sUv" secondAttribute="trailingMargin" id="0ph-rk-MaR"/>
-                                        <constraint firstItem="Pq3-E8-eXb" firstAttribute="top" secondItem="CeH-lV-sUv" secondAttribute="topMargin" id="Alj-F1-3oS"/>
-                                        <constraint firstItem="PiM-Rq-CI0" firstAttribute="centerX" secondItem="CeH-lV-sUv" secondAttribute="centerX" id="EKn-hV-F5B"/>
-                                        <constraint firstItem="PiM-Rq-CI0" firstAttribute="centerY" secondItem="CeH-lV-sUv" secondAttribute="centerY" id="Tde-KM-t1M"/>
-                                        <constraint firstItem="Pq3-E8-eXb" firstAttribute="bottom" secondItem="CeH-lV-sUv" secondAttribute="bottomMargin" id="fHI-a3-WdB"/>
-                                        <constraint firstItem="Pq3-E8-eXb" firstAttribute="leading" secondItem="CeH-lV-sUv" secondAttribute="leadingMargin" id="kZr-g7-e2U"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="backgroundImageView" destination="Pq3-E8-eXb" id="XI0-mO-7dJ"/>
-                                    <outlet property="stackView" destination="PiM-Rq-CI0" id="WrC-Y1-Hbr"/>
-                                    <outlet property="subtitleLabel" destination="nIe-Mn-cM7" id="c0e-fU-Miv"/>
-                                    <outlet property="titleLabel" destination="6M2-79-fjl" id="NQj-7v-BeD"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -173,7 +120,4 @@
             <point key="canvasLocation" x="-752.79999999999995" y="878.57142857142856"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Fuji" width="750" height="536"/>
-    </resources>
 </document>
